@@ -2,7 +2,7 @@
 #
 #
 
-# wget -O - https://raw.githubusercontent.com/thecoolagency/osx-bash-shopify-asset-downloader/main/install.sh | sudo bash
+# wget -O - https://raw.githubusercontent.com/thecoolagency/osx-bash-shopify-asset-downloader/main/install.sh | bash
 
 # exit when any command fails
 set -e
