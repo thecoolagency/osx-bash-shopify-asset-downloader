@@ -21,11 +21,18 @@ sudo -v
 username=$(id -un)
 fullName=$(id -F)
 userDir=$(eval echo ~$USER)
+userDirDoc="$userDir/Documents"
 container="$userDir/Documents/web-assets"
+
+echo $userDir
+echo $userDirDoc
+echo $container
 
 echo " "
 echo "Hello $fullName"
 echo " "
+
+mkdir $userDirDoc/web-assets
 
 cd $container
 
