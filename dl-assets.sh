@@ -63,8 +63,17 @@ awk -i inplace '!/'.mp4'/' output.txt
 find . -type f -name "*.txt" -print0 | xargs -0 sed -i '' -e 's/^.*https/https/'
 
 find . -type f -name "*.txt" -print0 | xargs -0 sed -i '' -e 's/.png.*/.png/'
+find . -type f -name "*.txt" -print0 | xargs -0 sed -i '' -e 's/.PNG.*/.PNG/'
 find . -type f -name "*.txt" -print0 | xargs -0 sed -i '' -e 's/.jpg.*/.jpg/'
+find . -type f -name "*.txt" -print0 | xargs -0 sed -i '' -e 's/.JPG.*/.JPG/'
+find . -type f -name "*.txt" -print0 | xargs -0 sed -i '' -e 's/.jpeg.*/.jpeg/'
+find . -type f -name "*.txt" -print0 | xargs -0 sed -i '' -e 's/.JPEG.*/.JPEG/'
 find . -type f -name "*.txt" -print0 | xargs -0 sed -i '' -e 's/.gif.*/.gif/'
+find . -type f -name "*.txt" -print0 | xargs -0 sed -i '' -e 's/.GIF.*/.GIF/'
+# find . -type f -name "*.txt" -print0 | xargs -0 sed -i '' -e 's/.pdf.*/.pdf/'
+# find . -type f -name "*.txt" -print0 | xargs -0 sed -i '' -e 's/.PDF.*/.PDF/'
+# find . -type f -name "*.txt" -print0 | xargs -0 sed -i '' -e 's/.mp4.*/.mp4/'
+# find . -type f -name "*.txt" -print0 | xargs -0 sed -i '' -e 's/.MP4.*/.MP4/'
 
 touch output-cleaned.txt
 
