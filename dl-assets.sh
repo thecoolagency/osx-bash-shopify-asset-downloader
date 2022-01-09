@@ -11,7 +11,7 @@ echo '                   _.|o o  |_   ) )  ';
 echo '                 -(((---(((--------  ';
 echo "##################################################### "
 echo "######                                         ###### "
-echo "######         Download website assets         ###### " 
+echo "######         Download shopify assets         ###### " 
 echo "######          wwww.jonahlmadeya.com          ###### " 
 echo "######                                         ###### "
 echo "##################################################### " 
@@ -22,7 +22,7 @@ username=$(id -un)
 fullName=$(id -F)
 userDir=$(eval echo ~$USER)
 userDirDoc="$userDir/Documents"
-container="$userDir/Documents/web-assets"
+container="$userDir/Documents/shopify-assets"
 
 echo $userDir
 echo $userDirDoc
@@ -32,7 +32,7 @@ echo " "
 echo "Hello $fullName"
 echo " "
 
-mkdir $userDirDoc/web-assets
+mkdir $userDirDoc/shopify-assets
 
 cd $container
 
@@ -49,9 +49,9 @@ cd $domainName
 
 find . -type f -print0 | xargs -0 sed -i '' -e 's|"//cdn|"https://cdn|g'
 
-touch /Users/$username/Documents/web-assets/$domainName/wget/output.txt
+touch /Users/$username/Documents/shopify-assets/$domainName/wget/output.txt
 
-grep -r " src=\"https://cdn" . >> /Users/$username/Documents/web-assets/$domainName/wget/output.txt
+grep -r " src=\"https://cdn" . >> /Users/$username/Documents/shopify-assets/$domainName/wget/output.txt
 
 cd ..
 
@@ -78,7 +78,7 @@ cd assets
 
 wget -i ../output-cleaned.txt
 
-open -a Finder /Users/$username/Documents/web-assets/$domainName/wget/
+open -a Finder /Users/$username/Documents/shopify-assets/$domainName/wget/
 
 echo ""
 echo "######                All Done!                ###### " 
