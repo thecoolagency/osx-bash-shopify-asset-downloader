@@ -38,7 +38,7 @@ scriptsDir="$userDir/Scripts"
 echo " "
 echo "Hello $fullName"
 echo " "
-echo "This script will install scripts in $scriptsDir then delete itself!"
+echo "This script will install scripts in $scriptsDir then disappear!"
 echo " "
 
 echo "####### START INSTALL ##################################################### "

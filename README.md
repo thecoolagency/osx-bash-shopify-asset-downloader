@@ -1,5 +1,6 @@
 # Shopify Assets Downloader for OS X
 
+[Dependencies](#dependencies) |
 [Getting started](#getting-started) |
 [License](#license)
 
@@ -9,6 +10,12 @@ Shopify Assets Downloader is a script optimized only to run on OS X 10.0+. It do
 * **GREP:** To catch all lines containing the specified string (src=\"https://cdn)
 * **AWK:** To remove duplicates and filter out certain file types (js, css, pdf, mp4). You can edit the scripts to include them.
 * **FIND (with XARGS):** To clean URL lines for WGET
+
+## Dependencies
+
+* **WGET:** To download site files and assets
+
+Head over to [OS X Initial setup](https://github.com/thecoolagency/os-x-initial-setup) to install all required dependencies.
 
 ## Getting started
 
