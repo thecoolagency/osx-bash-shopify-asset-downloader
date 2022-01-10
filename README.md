@@ -25,7 +25,7 @@ wget -O - https://raw.githubusercontent.com/thecoolagency/osx-bash-shopify-asset
 ```
 2. Then to download assets for a site run:
 ``` sh
-sh dl-assets.sh
+sh dl-shopify-assets.sh
 ```
 
 >:information_source: It will create a folder called domain.com in ~/Documents/web-assets and open it with Finder upon completion.

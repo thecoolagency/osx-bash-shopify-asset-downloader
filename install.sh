@@ -46,12 +46,12 @@ echo " "
 
 cd $scriptsDir
 
-fullPath="$scriptsDir/dl-assets.sh"
+fullPath="$scriptsDir/dl-shopify-assets.sh"
 # echo $fullPath
 
 echo "==> downloading website files..."
 
-wget -q https://raw.githubusercontent.com/thecoolagency/osx-bash-shopify-asset-downloader/main/dl-assets.sh
+wget -q https://raw.githubusercontent.com/thecoolagency/osx-bash-shopify-asset-downloader/main/dl-shopify-assets.sh
 if [ $? != 0 ]
 then
     echo " "
@@ -93,5 +93,5 @@ echo "####### END INSTALL ##################################################### 
 echo " "
 echo "Congrats! To download assets for a shopify site, open your Terminal and run:"
 echo " "
-echo "  sh dl-assets.sh"
+echo "  sh dl-shopify-assets.sh"
 echo " "
